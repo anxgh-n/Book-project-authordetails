@@ -7,14 +7,8 @@ server:
 spring:
   application:
     name: authordetails
-  datasource:
-    url: jdbc:h2:mem:db2
-    username: sa
-    password: password
-    driver-class-name: org.h2.Driver
+  data:
+    mongodb:
+      uri: mongodb+srv://anagh11:anagh11@bookcluster.dl7kn.mongodb.net/?retryWrites=true&w=majority&appName=BookCluster
+      database: bookdbauthor
 
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-      show-sql: true
